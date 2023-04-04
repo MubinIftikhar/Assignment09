@@ -1,0 +1,334 @@
+/*------------------------------
+     Header Section Style 
+ -------------------------------- */
+ header {
+    background-color: #2d25a0;
+  }
+  /*---- Navigation ---- */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  .nav-links ul li {
+    margin-right: 36px;
+  }
+  .nav-links ul li a {
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Banner section  */
+  #banner {
+    display: flex;
+    margin-bottom: 86px;
+  }
+  #banner .left-col h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    max-width: 475px;
+  }
+  
+  #banner .right-col img {
+    width: 556px;
+    height: 438px;
+    transition: all 0.8s;
+  }
+  #banner .right-col img:hover {
+    transform: scale(1.05) translate(15px, 20px);
+  }
+  
+  /* Main section  */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    max-width: 1100px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  .player-card {
+    padding: 15px;
+    width: 330px;
+    height: 475px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(85, 84, 84, 0.418);
+    transition: 0.5s;
+  }
+  .player-card:hover {
+    box-shadow: 5px 5px 15px rgba(75, 74, 74, 0.616);
+    transform: scale(1.005);
+  }
+  .player-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .player-card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6c6c;
+  }
+  .player-img {
+    width: 300px;
+    height: 256px;
+  }
+  
+  /* Highlight  */
+  .highlight {
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+  }
+  
+  .highlight .left-col h2 {
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 470px;
+  }
+  .highlight .left-col p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6c6c;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    max-width: 400px;
+    text-align: justify;
+  }
+  .highlight .right-col {
+    position: relative;
+  }
+  .highlight .right-col img {
+    width: 567px;
+    height: 427px;
+    transition: 0.7s;
+  }
+  .highlight .right-col img:hover {
+    box-shadow: -5px -5px 20px rgba(66, 66, 66, 0.308);
+    transform: scale(1.005);
+  }
+  /* Merch  */
+  .buy-merch {
+    position: relative;
+  }
+  
+  .buy-merch img {
+    width: 100%;
+    height: 362px;
+  }
+  .merch-gradient {
+    width: 100%;
+    height: 362px;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0.082),
+      #2d25a093
+    );
+    transition: all 5s ease-in-out;
+  }
+  .buy-merch:hover .merch-gradient {
+    background-image: linear-gradient(to bottom, #ec98b7a2, #2d25a073);
+  }
+  .merch-disc {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    max-width: 400px;
+  }
+  .merch-disc h2 {
+    font-size: 36px;
+    color: #e02c6d;
+  }
+  .merch-disc p {
+    color: #ffffff;
+    margin: 20px auto;
+  }
+  .btn-buy {
+    padding: 10px 24px;
+    background-color: #e02c6d;
+  }
+  .btn-buy a {
+    color: white;
+    font-weight: 500;
+  }
+  /* News  */
+  #news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #news h2 {
+    font-size: 48px;
+    color: #e02c6d;
+  }
+  .fifa-news {
+    padding: 15px;
+    width: 330px;
+    height: 475px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(85, 84, 84, 0.418);
+    transition: 0.5s;
+  }
+  .fifa-news img {
+    width: 300px;
+    height: 230px;
+  }
+  .fifa-news h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .fifa-news p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6c6c;
+  }
+  .news-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    margin-bottom: 100px;
+  }
+  .news-details .btn {
+  }
+  /* Footer  */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  footer img {
+    width: 350px;
+    height: 80px;
+  }
+  footer i {
+    margin-right: 10px;
+  }
+  
+  /*----------------------------
+         Media quary  
+  -------------------------------*/
+  
+  /* Mobile Media Query  */
+  @media screen and (max-width: 767px) {
+    #nav {
+      display: none;
+    }
+    .container {
+      max-width: 600px;
+    }
+    #banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #banner .left-col h1 {
+      font-size: 36px;
+    }
+    #banner .right-col img {
+      width: 280px;
+      height: 220px;
+      transition: all 0.8s;
+      margin-top: 20px;
+      margin-left: -40px;
+    }
+    .players {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .highlight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .highlight .left-col h2 {
+      font-size: 28px;
+      max-width: 470px;
+    }
+    .highlight .left-col p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #6c6c6c;
+      margin-top: 8px;
+      margin-bottom: 24px;
+      max-width: 300px;
+      text-align: justify;
+    }
+    .highlight .right-col img {
+      width: 220px;
+      height: 180px;
+      transition: 0.7s;
+      margin-top: 20px;
+    }
+    .merch-disc h2 {
+      font-size: 36px;
+      color: white;
+    }
+    .merch-gradient {
+      width: 100%;
+      height: 362px;
+      position: absolute;
+      top: 0;
+      background-image: linear-gradient(to bottom, #e02c6d, #2d25a0);
+      transition: all 5s ease-in-out;
+    }
+    .buy-merch:hover .merch-gradient {
+      background-image: linear-gradient(to bottom, #e02c6d, #2d25a0);
+    }
+    .news-sec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Tablet Media Quary  */
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      max-width: 800px;
+    }
+  
+    #banner .left-col h1 {
+      font-size: 36px;
+    }
+    #banner .right-col img {
+      width: 400px;
+      height: 320px;
+      transition: all 0.8s;
+    }
+    .players {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight .left-col h2 {
+      font-size: 28px;
+      max-width: 470px;
+    }
+    .highlight .left-col p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #6c6c6c;
+      margin-top: 8px;
+      margin-bottom: 24px;
+      max-width: 300px;
+      text-align: justify;
+    }
+    .highlight .right-col img {
+      width: 350px;
+      height: 300px;
+      transition: 0.7s;
+    }
+    .news-sec {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
